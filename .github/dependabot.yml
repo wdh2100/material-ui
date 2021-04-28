@@ -1,0 +1,57 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "20:00"
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  - worktree
+  ignore:
+  - dependency-name: "@babel/*"
+    versions:
+    - ">= 0"
+  - dependency-name: babel-plugin-preval
+    versions:
+    - ">= 3.0"
+  - dependency-name: core-js
+    versions:
+    - ">= 0"
+  - dependency-name: "@date-io/core"
+    versions:
+    - ">= 0"
+  - dependency-name: "@date-io/date-fns"
+    versions:
+    - ">= 0"
+  - dependency-name: jss-*
+    versions:
+    - ">= 0"
+  - dependency-name: raw-loader
+    versions:
+    - ">= 0"
+  - dependency-name: react-dom
+    versions:
+    - ">= 0"
+  - dependency-name: react-is
+    versions:
+    - ">= 0"
+  - dependency-name: react-test-renderer
+    versions:
+    - ">= 0"
+  - dependency-name: size-limit
+    versions:
+    - ">= 0"
+  - dependency-name: tslint
+    versions:
+    - 5.x
+  - dependency-name: react-jss
+    versions:
+    - 10.5.0
+  - dependency-name: markdown-to-jsx
+    versions:
+    - 7.0.1
+  - dependency-name: marked
+    versions:
+    - 1.2.2
